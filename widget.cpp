@@ -289,7 +289,7 @@ void Widget::loadMap()
     std::ifstream file;
     try
     {
-        file.open((QCoreApplication::applicationDirPath()+"\\res\\map.dat").toStdString().c_str(),std::ios::in|std::ios::binary);
+        file.open((QCoreApplication::applicationDirPath()+"\\map.dat").toStdString().c_str(),std::ios::in|std::ios::binary);
         if(!file)
         {
             throw "无法加载地图，请确保可执行文件所在目录的res目录下有map.dat文件，并且该游戏不放在中文目录下";
