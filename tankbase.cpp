@@ -1,6 +1,10 @@
 #include "tankbase.h"
 #include <QDebug>
 
+tankBase::tankBase()
+{
+}
+
 void tankBase::shot()
 {
     //子弹已经射出就 return
@@ -158,9 +162,7 @@ bool tankBase::canReachable(int x, int y,direct dir)
     }
 }
 
-tankBase::tankBase()
-{
-}
+
 
 tankBase &tankBase::operator=(const tankBase &other)
 {
