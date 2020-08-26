@@ -12,7 +12,7 @@ private:
     bool active;
 
 public:
-    bool bump;
+    bool bump; //撞击
     int bumpx;
     int bumpy;
     int w;
@@ -34,7 +34,7 @@ public:
     void setDir(direct);
     void display(QPainter&);
     bool canReachable(int,int,direct);
-    Bullet& operator=(const Bullet&);
+    Bullet& operator=(const Bullet&); //重载赋值运算符=，用于创建一个对象，比如拷贝构造函数
     void showExplosion(QPainter&);
     ~Bullet();
 };
